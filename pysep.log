@@ -1,0 +1,101 @@
+[2024-10-15 13:10:13] - pysep - DEBUG: running PySEP version 0.6.1
+[2024-10-15 13:10:13] - pysep - INFO: overwriting default parameters with config file: '/home/aayushi/pysep/pysep/configs/mtuq_workshop_2022/2016-12-12T220444_HINDU_KUSH.yaml'
+[2024-10-15 13:10:13] - pysep - DEBUG: event_tag: None -> 2016-12-12T220444_HINDU_KUSH
+[2024-10-15 13:10:13] - pysep - DEBUG: config_file: /home/aayushi/pysep/pysep/configs/mtuq_workshop_2022/2016-12-12T220444_HINDU_KUSH.yaml -> None
+[2024-10-15 13:10:13] - pysep - DEBUG: client: IRIS -> GEOFON
+[2024-10-15 13:10:13] - pysep - DEBUG: origin_time: None -> 2016-12-12T22:04:44.13
+[2024-10-15 13:10:13] - pysep - DEBUG: event_latitude: None -> 39.2856
+[2024-10-15 13:10:13] - pysep - DEBUG: event_longitude: None -> 74.4344
+[2024-10-15 13:10:13] - pysep - DEBUG: event_depth_km: None -> 10
+[2024-10-15 13:10:13] - pysep - DEBUG: event_magnitude: None -> 4.2
+[2024-10-15 13:10:13] - pysep - DEBUG: networks: * -> 8H
+[2024-10-15 13:10:13] - pysep - DEBUG: stations: * -> EP02
+[2024-10-15 13:10:13] - pysep - DEBUG: channels: * -> HH?
+[2024-10-15 13:10:13] - pysep - DEBUG: reference_time: None -> 2016-12-12T22:04:44.13
+[2024-10-15 13:10:13] - pysep - DEBUG: maxdistance_km: 20000.0 -> 300.0
+[2024-10-15 13:10:13] - pysep - DEBUG: rotate: None -> ['ENZ', 'RTZ']
+[2024-10-15 13:10:13] - pysep - DEBUG: resample_freq: None -> 50
+[2024-10-15 13:10:13] - pysep - DEBUG: remove_clipped: True -> False
+[2024-10-15 13:10:13] - pysep - DEBUG: write_files: inv,event,stream,sac,config_file,station_list -> inv,event,stream,sac,weights_code
+[2024-10-15 13:10:13] - pysep - DEBUG: `log_level` set to DEBUG
+[2024-10-15 13:10:14] - pysep - INFO: creating event metadata with user parameters
+[2024-10-15 13:10:14] - pysep - INFO: event info summary - origin time: 2016-12-12T22:04:44.130000Z; lat=39.29; lon=74.43; depth[km]=10.0; magnitude=4.2
+[2024-10-15 13:10:17] - pysep - INFO: full output directory is: /home/aayushi/pysep/pysep/configs/mtuq_workshop_2022/2016-12-12T220444_SOUTHERN_XINJIANG_CHINA
+[2024-10-15 13:10:17] - pysep - INFO: writing event as QuakeML
+[2024-10-15 13:10:17] - pysep - DEBUG: /home/aayushi/pysep/pysep/configs/mtuq_workshop_2022/2016-12-12T220444_SOUTHERN_XINJIANG_CHINA/event.xml
+[2024-10-15 13:10:17] - pysep - INFO: querying GEOFON for station metadata
+[2024-10-15 13:10:19] - pysep - INFO: collected 3 channels from 1 stations in 1 networks from GEOFON
+[2024-10-15 13:10:19] - pysep - INFO: 0 traces outside distance bounds [0, 300.0]km
+[2024-10-15 13:10:19] - pysep - INFO: 0 traces outside azimuth bounds [0, 360]deg
+[2024-10-15 13:10:19] - pysep - INFO: writing inventory as StationXML
+[2024-10-15 13:10:19] - pysep - DEBUG: /home/aayushi/pysep/pysep/configs/mtuq_workshop_2022/2016-12-12T220444_SOUTHERN_XINJIANG_CHINA/inv.xml
+[2024-10-15 13:10:19] - pysep - INFO: querying client 'GEOFON' for waveforms
+[2024-10-15 13:10:19] - pysep - INFO: querying 1 lines in bulk client request...
+[2024-10-15 13:10:22] - pysep - INFO: 3 waveforms returned after query
+[2024-10-15 13:10:22] - pysep - INFO: writing inventory as StationXML
+[2024-10-15 13:10:22] - pysep - DEBUG: /home/aayushi/pysep/pysep/configs/mtuq_workshop_2022/2016-12-12T220444_SOUTHERN_XINJIANG_CHINA/inv.xml
+[2024-10-15 13:10:22] - pysep - INFO: cleaning up channel naming
+[2024-10-15 13:10:22] - pysep - WARNING: no SAC header values found for: []
+[2024-10-15 13:10:22] - pysep - WARNING: no SAC header values found for: []
+[2024-10-15 13:10:22] - pysep - WARNING: no SAC header values found for: []
+[2024-10-15 13:10:22] - pysep - DEBUG: using SAC headers to fetch phase arrivals '['ttall']'from model 'ak135'
+[2024-10-15 13:10:23] - pysep - INFO: applying linear detrend to all data
+[2024-10-15 13:10:23] - pysep - INFO: removing response, output units in: VEL
+[2024-10-15 13:10:23] - pysep - INFO: will apply pre-filter: default
+[2024-10-15 13:10:23] - pysep - INFO: applying amplitude scale factor: 1
+[2024-10-15 13:10:23] - pysep - INFO: resampling data to sampling rate: 50Hz with method 'interpolate'
+[2024-10-15 13:10:23] - pysep - DEBUG: 8H.EP02..HHZ applying lowpass filter to prep for new nyquist freq: 50.0 -> 25.0
+[2024-10-15 13:10:23] - pysep - DEBUG: 8H.EP02..HHN applying lowpass filter to prep for new nyquist freq: 50.0 -> 25.0
+[2024-10-15 13:10:23] - pysep - DEBUG: 8H.EP02..HHE applying lowpass filter to prep for new nyquist freq: 50.0 -> 25.0
+[2024-10-15 13:10:23] - pysep - INFO: trimming start and end times on a per-station basis
+[2024-10-15 13:10:23] - pysep - INFO: formatting stream of length 3 for component rotation
+[2024-10-15 13:10:23] - pysep - INFO: stream formatting returned 3 traces
+[2024-10-15 13:10:23] - pysep - INFO: rotating to components ZNE
+[2024-10-15 13:10:23] - pysep - DEBUG: 8H.EP02..HHE azimuth==90.0; dip==0.0
+[2024-10-15 13:10:23] - pysep - DEBUG: 8H.EP02..HHN azimuth==0.0; dip==0.0
+[2024-10-15 13:10:23] - pysep - DEBUG: 8H.EP02..HHZ azimuth==0.0; dip==-90.0
+[2024-10-15 13:10:23] - pysep - INFO: rotating to components RTZ
+[2024-10-15 13:10:23] - pysep - DEBUG: assuming that the expected stream length is: 399.98s
+[2024-10-15 13:10:23] - pysep - INFO: writing CAP weight files
+[2024-10-15 13:10:23] - pysep - DEBUG: writing CAP weight file for 1 station(s), ordered by 'code': '/home/aayushi/pysep/pysep/configs/mtuq_workshop_2022/2016-12-12T220444_SOUTHERN_XINJIANG_CHINA/weights.dat'
+[2024-10-15 13:10:23] - pysep - DEBUG: writing CAP weight file for 1 station(s), ordered by 'code': '/home/aayushi/pysep/pysep/configs/mtuq_workshop_2022/2016-12-12T220444_SOUTHERN_XINJIANG_CHINA/weights_body.dat'
+[2024-10-15 13:10:23] - pysep - DEBUG: writing CAP weight file for 1 station(s), ordered by 'code': '/home/aayushi/pysep/pysep/configs/mtuq_workshop_2022/2016-12-12T220444_SOUTHERN_XINJIANG_CHINA/weights_surf.dat'
+[2024-10-15 13:10:23] - pysep - INFO: writing waveform stream in MiniSEED
+[2024-10-15 13:10:23] - pysep - DEBUG: /home/aayushi/pysep/pysep/configs/mtuq_workshop_2022/2016-12-12T220444_SOUTHERN_XINJIANG_CHINA/stream.ms
+[2024-10-15 13:10:23] - pysep - INFO: writing all waveforms traces in SAC format
+[2024-10-15 13:10:23] - pysep - DEBUG: 2016-12-12T220444_SOUTHERN_XINJIANG_CHINA.8H.EP02..HHZ.sac
+[2024-10-15 13:10:23] - pysep - DEBUG: 2016-12-12T220444_SOUTHERN_XINJIANG_CHINA.8H.EP02..HHN.sac
+[2024-10-15 13:10:23] - pysep - DEBUG: 2016-12-12T220444_SOUTHERN_XINJIANG_CHINA.8H.EP02..HHE.sac
+[2024-10-15 13:10:23] - pysep - DEBUG: 2016-12-12T220444_SOUTHERN_XINJIANG_CHINA.8H.EP02..HHZ.sac
+[2024-10-15 13:10:23] - pysep - DEBUG: 2016-12-12T220444_SOUTHERN_XINJIANG_CHINA.8H.EP02..HHR.sac
+[2024-10-15 13:10:23] - pysep - DEBUG: 2016-12-12T220444_SOUTHERN_XINJIANG_CHINA.8H.EP02..HHT.sac
+[2024-10-15 13:10:23] - pysep - INFO: plotting source receiver map
+[2024-10-15 13:10:23] - pysep - DEBUG: setting projection local due to max src-rcv distance of 115.81166203081244km
+[2024-10-15 13:10:26] - pysep - INFO: checking parameter acceptability
+[2024-10-15 13:10:26] - pysep - INFO: getting source-receiver stats
+[2024-10-15 13:10:26] - pysep - INFO: calculating source-receiver distance and (back)azimuths
+[2024-10-15 13:10:26] - pysep - INFO: preprocessing 6 waveforms
+[2024-10-15 13:10:26] - pysep - DEBUG: trimming start and end times and filling any gaps with mean
+[2024-10-15 13:10:26] - pysep - DEBUG: demean waveform in preparation for tapering
+[2024-10-15 13:10:26] - pysep - DEBUG: tapering waveforms with 0.05 taper
+[2024-10-15 13:10:26] - pysep - INFO: calculating starttime offsets from event origin time 2016-12-12T22:04:44.130000Z
+[2024-10-15 13:10:26] - pysep - INFO: determining sort order with parameter: distance
+[2024-10-15 13:10:26] - pysep - INFO: determining if any stations/channels should be skipped
+[2024-10-15 13:10:26] - pysep - INFO: criteria check will remove 0/6 traces
+[2024-10-15 13:10:26] - pysep - INFO: determining y-axis positioning for sort: distance
+[2024-10-15 13:10:26] - pysep - INFO: determining amplitude scaling w.r.t st with: 'normalize'
+[2024-10-15 13:10:26] - pysep - INFO: plotting record section for 6 waveforms
+[2024-10-15 13:10:26] - pysep - DEBUG: plotting line check starting from bottom (y=0)
+[2024-10-15 13:10:26] - pysep - DEBUG: 
+IDX	Y		ID	DIST	AZ	BAZ	TSHIFT	TOFFSET	YABSMAX
+[2024-10-15 13:10:26] - pysep - DEBUG: 
+2	0	8H.EP02..HHE	115.81	 58.05	238.78	0.00	-99.99	2.27E-05
+1	1	8H.EP02..HHN	115.81	 58.05	238.78	0.00	-99.99	1.97E-05
+5	2	8H.EP02..HHT	115.81	 58.05	238.78	0.00	-99.99	1.99E-05
+4	3	8H.EP02..HHR	115.81	 58.05	238.78	0.00	-99.99	2.12E-05
+3	4	8H.EP02..HHZ	115.81	 58.05	238.78	0.00	-99.99	1.20E-05
+0	5	8H.EP02..HHZ	115.81	 58.05	238.78	0.00	-99.99	1.20E-05
+
+[2024-10-15 13:10:26] - pysep - INFO: placing station labels on y-axis at: y_axis
+[2024-10-15 13:10:26] - pysep - INFO: user requests inverting y-axis with absolute reverse sort
+[2024-10-15 13:10:26] - pysep - INFO: saving figure to /home/aayushi/pysep/pysep/configs/mtuq_workshop_2022/2016-12-12T220444_SOUTHERN_XINJIANG_CHINA/record_section.png
